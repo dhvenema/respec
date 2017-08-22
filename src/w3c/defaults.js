@@ -5,6 +5,7 @@ export const name = "w3c/defaults";
 import linter from "core/linter";
 import { rule as noHeadinglessSectionsRule } from "core/linter-rules/no-headingless-sections";
 import { rule as noHttpPropsRule } from "core/linter-rules/no-http-props";
+import { rule as validateHTML } from "core/linter-rules/validate-html";
 import { rule as privsecSectionRule } from "w3c/linter-rules/privsec-section";
 
 linter.register(noHttpPropsRule, privsecSectionRule, noHeadinglessSectionsRule);
@@ -53,6 +54,7 @@ const w3cDefaults = {
     "no-headingless-sections": true,
     "privsec-section": true,
     "no-http-props": true,
+    "validate-html": true,
   },
   doRDFa: false,
   license: "w3c-software-doc",
